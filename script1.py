@@ -3,7 +3,7 @@ import csv
 
 def create_csv_annotation(class_name: str, annotation_name: str) -> None:
     """This function generates a CSV annotation by taking three inputs: the absolute file path, the relative file path, the file's class name."""
-    path_to_class = os.path.join('dataset')
+    path_to_class = os.path.join('data')
     class_names = os.listdir(path_to_class)
     with open(annotation_name, mode="w", newline='') as file:
         file_writer = csv.writer(file, delimiter=",")

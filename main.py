@@ -5,8 +5,8 @@ from script4 import get_next_element
 
 if __name__ == '__main__':
     run1('responses', 'annotation1.csv')
-    run2('datasetcopy1', 'annotation.csv')
-    run3('annotation.csv', 'datasetcopy2')
+    run2('datacopy1', 'annotation.csv')
+    run3('annotation.csv', 'datacopy2')
     
     for item in get_next_element('1'):
         print(item)

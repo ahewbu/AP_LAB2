@@ -4,7 +4,7 @@ import os
 class IteratorTask1:
     def __init__(self, path: str):
         """initializing fields class"""
-        self.file_names = os.listdir(os.path.join('dataset', path))
+        self.file_names = os.listdir(os.path.join('data', path))
         self.counter = 0
         self.limit = len(self.file_names)
         self.path = path
