@@ -4,7 +4,7 @@ import shutil
 import csv
 from typing import Optional
 
-from Script2 import create_dir
+from script2 import create_dir
 
 
 def get_element(class_name: str) -> Optional[str]:
