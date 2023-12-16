@@ -22,11 +22,11 @@ def create_randomname_file(annotation_name: str, dir_copy: str) -> None:
     for data_class in os.listdir("data"):
         for file_name in get_element(data_class):
             shutil.copy(os.path.join(os.path.join("data", data_class), file_name),
-                        os.path.join(dir_copy, f"{file_number[counter]}.txt"))
+                        os.path.join(dir_copy, f"review No.{file_number[counter]}.txt"))
 
             with open(os.path.join(dir_copy, annotation_name), mode="a", newline='') as file:
                 file_writer = csv.writer(file, delimiter=",")
-                file_writer.writerow([f"{file_number[counter]}.txt", data_class])
+                file_writer.writerow([f"review No.{file_number[counter]}.txt", data_class])
             counter += 1
 
 
